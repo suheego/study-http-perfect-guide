@@ -1,18 +1,27 @@
-# URL 문법, 여러 URL 컴포넌트가 어떤 의미를 가지며 무엇을 수행하는지
+후... 수달 스터디 처음인데... 자 한번...
 
-# 여러 웹 클라이언트가 지원하는 상대 URL과 확장 URL 같은 단축 URL 에 대해서
+![](https://images.velog.io/images/noahshin__11/post/e428f373-342e-445b-af36-36eb21d41f1f/image.png)
 
-# URL의 인코딩과문자규칙.
+# chapter. 2 
 
-# 여러인터넷정보시스템에적용되는공통URL스킴.
+# 키워드
 
-# 기존 이름은 유지하면서 객체들을 다른 장소로 옮기는 것을 가능하게 해주는
+- ## URL 문법, 여러 URL 컴포넌트가 어떤 의미를 가지며 무엇을 수행하는지
+
+- ## 여러 웹 클라이언트가 지원하는 상대 URL과 확장 URL 같은 단축 URL 에 대해서
+
+- ## URL의 인코딩과문자규칙.
+
+- ## 여러인터넷정보시스템에적용되는공통URL스킴.
+
+- ## 기존 이름은 유지하면서 객체들을 다른 장소로 옮기는 것을 가능하게 해주는
 
                      URN(Uniform Resource Name)을 포함한 URL의 미래.
+                     근데 이건 나중에 책 뒤에서 좀 더 알아보자
 
-# Uniform Resource Identifier
+# Uniform Resource Identifier (URI)
 
-# Uniform Resource Locator
+# Uniform Resource Locator (URL)
 
 =================================
 
@@ -30,7 +39,7 @@ http://www.joes-hardware.com/seasonal/index-fall.html
 ![](https://images.velog.io/images/noahshin__11/post/c2760a71-cad6-460c-babf-c1e993ebc45d/image.png)
 
 
-URL은 HTTP 프로토콜이 아닌 다른 가용한 프로토콜을 사용할 수도 있다.
+URL은 HTTP 프로토콜이 아닌 다른 가용한 프로토콜을 사용할 수도 있음
 mailto:president@whitehouse.gov
 는 이메일 주소를 가리키며,
 
@@ -53,11 +62,13 @@ rtsp://www.joes-hardware.com:554/interview/cto_video
  /pub 일로가
  /complete-catalog.xls 열어
  
+ 이런식으로 막 단계를 나눠서 여러번 했다 ~ 이 마리야 ~
+ 
  지금은 
  ftp://ftp.lots-o-books.com/pub/complete-catalog.xls
  요즘 애들은 너무 온실 속의 화초처럼 자랐어 ~
  
- ## URL은 당신과 브라우저에게 정보 찾는데 필요한 모든 것을 제공하며, 당신이 원 하는 리소스가 어디에 위치하고 어떻게 가져오는지 정의한다.
+ ## URL은 당신과 브라우저에게 정보 찾는데 필요한 모든 것을 제공하며, 당신이 원하는 리소스가 어디에 위치하고 어떻게 가져오는지 정의한다.
  
  =================================
  진짜 빡세게 하면 
@@ -76,7 +87,7 @@ rtsp://www.joes-hardware.com:554/interview/cto_video
  
  스킴 컴포넌트는 알파벳으로 시작해야 하고 URL의 나머지 부분들과 첫 번째 ‘:’ 문자로 구분한다. 
  
- 스킴 명은 대소문자를 가리지 않으므로 ‘http://www.joes- hardware.com’와 ‘HTTP://www.joes-hardware.com’는 같다.
+>  스킴 명은 **_대소문자를 가리지 않으므로_** ‘http://www.joes-hardware.com’와 ‘HTTP://www.joes-hardware.com’는 같다.
  
  
  ## 호스트와 포트
@@ -84,7 +95,7 @@ rtsp://www.joes-hardware.com:554/interview/cto_video
  애플리케이션이 인터넷에 있는 리소스를 찾으려면, 리소스를 호스팅하고 있는 장 비와 그 장비 내에서 리소스에 접근할 수 있는 서버가 어디에 있는지 알아야 한다. 
 
 ### URL의 호스트와 포트 컴포넌트는 그 두 가지 정보를 제공해준다.
- - http://www.j oes-hardware•com:80/index.html
+ - http://www.joes-hardware•com:80/index.html
  - http://161.58.228.45:80/index.html
  
  둘이 같은겨
@@ -101,10 +112,14 @@ rtsp://www.joes-hardware.com:554/interview/cto_video
 - http://joe:j oespasswd@www.joes-ha rdwa re•com/sales_info.txt
 
 
-첫 번째 예는 사용자 이름이나 비밀번호 컴포넌트가 없이 표준 스킴, 호스트, 경 로만 있다. 애플리케이션이 FTP와 같이 사용자 이름과 비밀번호를 요구하는 URL 스킴을 사용한다면, 그 값들이 삽입되어 있지 않을 경우 기본 사용자 이름과 비밀 번호 값을 넣어놓을 것이다. 예를 들어, 사용자 이름과 비밀번호를 기술하지 않고 FTP URL에 접근하면, 기본 사용자 이름 값으로 ‘anonymous’가, 비밀번호는 브라 우저마다 가지고 있는 기본값을 사용한다(인터넷 익스플로러는 ‘lEUser’를, 크롬은 ‘chrome@example.com’을 넣는다).
+첫 번째 예는 사용자 이름이나 비밀번호 컴포넌트가 없이 표준 스킴, 호스트, 경로만 있다.
+애플리케이션이 FTP와 같이 사용자 이름과 비밀번호를 요구하는 URL 스킴을 사용한다면, 그 값들이 삽입되어 있지 않을 경우 기본 사용자 이름과 비밀 번호 값을 넣어놓을 것이다. 
+예를 들어, 사용자 이름과 비밀번호를 기술하지 않고 FTP URL에 접근하면, 기본 사용자 이름 값으로 ‘anonymous’가, 비밀번호는 브라 우저마다 가지고 있는 기본값을 사용한다
+(인터넷 익스플로러는 ‘lEUser’를, 크롬은 ‘chrome@example.com’을 넣는다).
 
-두 번째 예에는 사용자 이름이 ‘anonymous’로 되어 있다. 호스트 컴포넌트와 나
-란히 기술되어 있는 사용자 이름은 단순한 이메일 주소처럼 보이기도 한다. 문 자는 URL로부터 사용자 이름과 비 밀번호 컴포넌트를 분리한다.
+두 번째 예에는 사용자 이름이 ‘anonymous’로 되어 있다. 
+호스트 컴포넌트와 나란히 기술되어 있는 사용자 이름은 단순한 이메일 주소처럼 보이기도 한다. 
+문자는 URL로부터 사용자 이름과 비 밀번호 컴포넌트를 분리한다.
 
 세 번째 예는 사용자 이름(‘anonymous’)과 비밀번호(‘my_passwd’)를 문자로 분리하여 모두 기술하였다.
 
@@ -121,7 +136,7 @@ HTTP URL에 서 경로 컴포넌트는 ‘/’문자를 기준으로 경로조�
 ### 질의 문자열
 
 다음 URL은 아이템 번호 12731의 재고 가 있는지 확인하기 위해서 웹 데이터베이스 게이트웨이에 질의하는데 사용된다.
-http://ww.joes—hardware.com/inventory—check.cgi?item=!273!
+http://ww.joes—hardware.com/inventory—check.cgi?item=12731
 노아: 헐? 
 
 ![](https://images.velog.io/images/noahshin__11/post/fa0412b9-cdab-482c-842a-a29e62622f6a/image.png)
@@ -134,6 +149,7 @@ http://www.joes—hardware.com/inventory—check.cgi?item=12731&color=blue
 
 URL은 상대 URL과 절대 URL 두 가지로 나뉜다. 지금까지 우리가 본 것들은 절대 URL뿐이었다. 절대 URL은 리소스에 접근하는데 필요한 모든 정보를 가지고 있다.
 
+자 이게 URL 의 로직 다이어그램이라고 보면 될 것 같다.
 
 ![](https://images.velog.io/images/noahshin__11/post/00678687-074b-460a-9242-0c3f50c40412/image.png)
 
@@ -166,15 +182,19 @@ URL은 잘 호환되도록 설계되었다.
 
 몇몇 문자는 URL 내에서 특별한 의미로 예약되어 있다. 
 
-어떤 문자는 US-ASCII의 출 력 가능한 문자 집합에 포함되어 있지 않다.
+어떤 문자는 US-ASCII의 출력 가능한 문자 집합에 포함되어 있지 않다.
 
-URL에서 예약된 문자들을 본래의 목적이 아닌 다른 용도로 사용하려 면, 그 전에 반드시 인코딩해야 하는 문자들을 나열해 놓았다.
+URL에서 예약된 문자들을 본래의 목적이 아닌 다른 용도로 사용하려면, 그 전에 반드시 인코딩해야 하는 문자들을 나열해 놓았다.
 ![](https://images.velog.io/images/noahshin__11/post/e020c2ad-c052-4f99-a873-3554029715f4/image.png)
 ![](https://images.velog.io/images/noahshin__11/post/8dec5171-9a99-4c36-a836-dbda4a9c1e47/image.png)
 
-입력받은 URL에서 어떤 문자를 인코딩해야 하는지 결정하는 데는 브라우저와 같 이 사용자로부터 최초로 URL을 입력받는 애플리케이션에서 하는 것이 가장 적절 하다. URL을 구성하는 각 컴포넌트마다 사용할 수 있거나 없는 문자들이 있을 것이 고, 또 어떤 문자는 스킴에 따라서 가용성이 달라지기 때문에, 해당 문자들을 직접 입력 받는 애플리케이션이야말로 어떤 문자를 인코딩해야 하는지 결정하기에 가장 좋은 위치라는 것이다.
+입력받은 URL에서 어떤 문자를 인코딩해야 하는지 결정하는 데는 브라우저와 같 이 사용자로부터 최초로 URL을 입력받는 애플리케이션에서 하는 것이 가장 적절 하다.
 
-물론 극단적인 방법은 애플리케이션이 모든 문자를 인코딩하는 것이다. 이 방식 을 추천하지는 않지만, 이미 안전한 것으로 판단되는 문자를 재차 인코딩하는 것보
+URL을 구성하는 각 컴포넌트마다 사용할 수 있거나 없는 문자들이 있을 것이 고, 또 어떤 문자는 스킴에 따라서 가용성이 달라지기 때문에, 해당 문자들을 직접 입력 받는 애플리케이션이야말로 어떤 문자를 인코딩해야 하는지 결정하기에 가장 좋은 위치라는 것이다.
+
+물론 극단적인 방법은 애플리케이션이 모든 문자를 인코딩하는 것이다.
+
+이 방식 을 추천하지는 않지만, 이미 안전한 것으로 판단되는 문자를 재차 인코딩하는 것보
 다 더 완벽하고 빠른 규칙은 없다. 하지만 실제로 이 방식은 안전한 문자들을 인코 딩하지 않는 애플리케이션도 있기 때문에 오동작을 일으킬 수 있다.
 
 ## 스킴의 바다
