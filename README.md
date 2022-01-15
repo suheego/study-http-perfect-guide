@@ -1,6 +1,12 @@
 # study-http-perfect-guide
 HTTP 완벽 가이드 책을 읽고 정리한 respository 입니다.
 
-## 1. HTTP: 웹의 기초
 
-## 2. URL과 리소스
+
+# Member
+
+| 이름   | Github                               |
+| ------ | ------------------------------------ |
+| 고수희 | [Link](https://github.com/suheego)   |
+| 김민서 | [Link](https://github.com/gemma-Kim) |
+| 신재훈 | [Link](https://github.com/NoahShin)  |
