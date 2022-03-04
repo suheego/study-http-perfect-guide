@@ -58,7 +58,8 @@ WebDAV로 실행할 수 있는 작업에는 다음과 같은 것들이 있습니
 등록정보(메타 데이터) 조작. WebDAV 메소드 PROPFIND 및 PROPPATCH를 사용하여 저작자 및 작성 날짜와 같은 웹 페이지에 대한 정보를 만들고 제거, 쿼리할 수 있습니다.
 컬렉션 및 리소스 관리. WebDAV 메소드 GET, PUT, DELETE 및 MKCOL을 사용하여 문서 세트를 만들고 계층적 구성원 목록(파일 시스템의 디렉토리 목록과 유사)을 검색
 잠금. WebDAV를 사용하여 한 사람 이상이 동시에 한 문서에서 작업하지 못하도록 할 수 있습니다. WebDAV 메소드 LOCK 및 UNLOCK을 사용하여 exclusive 또는 shared 잠금을 사용함으로써 "업데이트 유실"(변경 사항 겹쳐쓰기) 문제를 방지할 수 있습니다.
-이름 공간 작업. WebDAV를 통해 WebDAV 메소드 COPY 및 MOVE를 사용하여 웹 리소스를 복사 및 이동하도록 서버에게 지시할 수 있습니다...
+
+이름 공간 작업. WebDAV를 통해 WebDAV 메소드 COPY 및 MOVE를 사용하여 웹 리소스를 복사 및 이동하도록 서버에게 지시할 수 있습니다.
 
 https://www.youtube.com/watch?v=lO22a85Bwx0
 
